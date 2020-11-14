@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+	<div class="jumbotron site-header">
+		<div class="container">
+			<h1><span class="glyphicon glyphicon-equalizer"></span> Wordpress</h1>
+			<p>Le basi di php per wordpress.</p>
+		</div>
+	</div>
+		<div class="footer-color">
+			<div class="container text-center">
+              <div class="contenuto-php php-color">
+                <a class="btn btn-primary" href="index.php" role="button">Torna alla Home</a>
+              </br>
+
+<?php
+
+/************************ Ciclo For Foreach **********************************/
+
+  $cars = array("Mercedes", "Volvo", "Audi", "Opel", "Jaguar");
+            echo "Metodo manuale: </br>";
+        echo $cars[0] . "</br>";
+        echo $cars[1] . "</br>";
+        echo $cars[2] . "</br>";
+        echo $cars[3] . "</br>";
+        echo $cars[4] . "</br>";
+
+  echo "<hr> metodo con ciclo Foreach: </br>";    // crea una linea di separazione
+        foreach($cars as $car ) {
+
+              echo $car . "</br>";
+
+        }
+
+
+ ?>
+
+
+              </div>
+
+			 </div>
+				<!-- /.row -->
+			</div>
+        </div>
+<footer>
+        <div class="small-print">
+        	<div class="container">
+
+        	</div>
+        </div>
+	</footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
